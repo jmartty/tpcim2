@@ -302,10 +302,62 @@
 
            <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Realtime</h1>
+                    <h1 class="page-header">
+                    Graficos en tiempo real</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+
+<div class="form-group">
+
+<div class="form-group">
+                                            <label>Seleccione el invernadero</label>
+                                            <select class="form-control">
+                                                <option>Invernadero #1</option>
+                                                <option>Invernadero #2</option>
+                                                <option>Invernadero #3</option>
+                                                <option>Invernadero #4</option>
+                                            </select>
+                                        </div>
+                                            <label>Mostrar</label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" checked="">Humedad 
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" checked>Temperatura
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">Intensidad luminosa
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">Precipitaciones
+                                            </label>
+                                        </div>
+
+<div class="panel panel-default">
+                        <div class="panel-heading">
+                            Invernadero #1 - Humedad <div class="fa fa-check fa-2x"></div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-line-chart-moving-hume" style="padding: 0px; position: relative;"><canvas class="flot-base" width="430" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 430px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 361px; left: 34px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 298px; left: 28px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 234px; left: 28px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 171px; left: 28px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 107px; left: 28px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 44px; left: 21px; text-align: right;">100</div></div></div><canvas class="flot-overlay" width="430" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 430px; height: 400px;"></canvas></div>
+                            </div>
+                        </div>
+
+<div class="panel-heading">
+                            Invernadero #1 - Temperatura <div class="fa fa-check fa-2x"></div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="flot-chart">
+                                <div class="flot-chart-content" id="flot-line-chart-moving-temp" style="padding: 0px; position: relative;"><canvas class="flot-base" width="430" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 430px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 361px; left: 34px; text-align: right;">8</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 298px; left: 28px; text-align: right;">12</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 234px; left: 28px; text-align: right;">16</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 171px; left: 28px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 107px; left: 28px; text-align: right;">24</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 44px; left: 21px; text-align: right;">28</div></div></div><canvas class="flot-overlay" width="430" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 430px; height: 400px;"></canvas></div>
+                            </div>
+                        </div>
+
+                        <!-- /.panel-body -->
+                    </div>
+
 
         </div>
         <!-- /#page-wrapper -->
@@ -314,5 +366,26 @@
     <!-- /#wrapper -->
 
 </body>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <script src="../vendor/flot/excanvas.min.js"></script>
+    <script src="../vendor/flot/jquery.flot.js"></script>
+    <script src="../vendor/flot/jquery.flot.pie.js"></script>
+    <script src="../vendor/flot/jquery.flot.resize.js"></script>
+    <script src="../vendor/flot/jquery.flot.time.js"></script>
+    <script src="../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="../data/flot-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
 
 </html>
